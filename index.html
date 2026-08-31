@@ -5,36 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>anne70</title>
     <style>
+      :root {
+        color-scheme: light;
+      }
       body {
         font-family: Arial, sans-serif;
         line-height: 1.5;
-        margin: 2rem;
+        margin: 0;
+        background: #f6f7fb;
+        color: #1f2937;
+      }
+      main {
+        max-width: 900px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 2rem;
+      }
+      p {
+        color: #4b5563;
       }
       ul {
         padding-left: 1.25rem;
+        columns: 2;
+        column-gap: 2rem;
+      }
+      li {
+        margin: 0.35rem 0;
+        break-inside: avoid;
+      }
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 640px) {
+        main {
+          margin: 1rem;
+          padding: 1.25rem;
+        }
+        ul {
+          columns: 1;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>PDFs in this repository</h1>
-    <ul>
-      <li><a href="B%C3%A6%20b%C3%A6%20lille%20lam.pdf">Bæ bæ lille lam.pdf</a></li>
-      <li><a href="Dans,%20dans%20med%20oss.pdf">Dans, dans med oss.pdf</a></li>
-      <li><a href="Finaste_jenta.pdf">Finaste_jenta.pdf</a></li>
-      <li><a href="I%20januari%20m%C3%A5nad.pdf">I januari månad.pdf</a></li>
-      <li><a href="Idag%20ska%20Martin%20i%20jorden.pdf">Idag ska Martin i jorden.pdf</a></li>
-      <li><a href="Jentelokken.pdf">Jentelokken.pdf</a></li>
-      <li><a href="Joachim%20uti%20Babylon%20-%20Bellman.pdf">Joachim uti Babylon - Bellman.pdf</a></li>
-      <li><a href="Klinga%20nu%20med%20klarinetter%20-%20Bellman.pdf">Klinga nu med klarinetter - Bellman.pdf</a></li>
-      <li><a href="Let%20it%20snow%20-%20Cahn.pdf">Let it snow - Cahn.pdf</a></li>
-      <li><a href="Mitt%20hjerte%20er%20ditt.pdf">Mitt hjerte er ditt.pdf</a></li>
-      <li><a href="Nessun%20Dorma.pdf">Nessun Dorma.pdf</a></li>
-      <li><a href="Nocturne%20-%20%C3%96hrwall.pdf">Nocturne - Öhrwall.pdf</a></li>
-      <li><a href="Now%20is%20the%20month%20of%20maying%20-%20Thomas%20Morley.pdf">Now is the month of maying - Thomas Morley.pdf</a></li>
-      <li><a href="Rachie-RAH2018.pdf">Rachie-RAH2018.pdf</a></li>
-      <li><a href="Skruva%20fiolen%20-%20Bellman.pdf">Skruva fiolen - Bellman.pdf</a></li>
-      <li><a href="Var%20redo%20-%20Bellman.pdf">Var redo - Bellman.pdf</a></li>
-      <li><a href="White%20Christmas.pdf">White Christmas.pdf</a></li>
-    </ul>
+    <main>
+      <h1>PDFs in this repository</h1>
+      <p>Click a title below to open the corresponding PDF.</p>
+      <ul>
+        <li><a href="B%C3%A6%20b%C3%A6%20lille%20lam.pdf">Bæ bæ lille lam.pdf</a></li>
+        <li><a href="Dans,%20dans%20med%20oss.pdf">Dans, dans med oss.pdf</a></li>
+        <li><a href="Finaste_jenta.pdf">Finaste_jenta.pdf</a></li>
+        <li><a href="I%20januari%20m%C3%A5nad.pdf">I januari månad.pdf</a></li>
+        <li><a href="Idag%20ska%20Martin%20i%20jorden.pdf">Idag ska Martin i jorden.pdf</a></li>
+        <li><a href="Jentelokken.pdf">Jentelokken.pdf</a></li>
+        <li><a href="Joachim%20uti%20Babylon%20-%20Bellman.pdf">Joachim uti Babylon - Bellman.pdf</a></li>
+        <li><a href="Klinga%20nu%20med%20klarinetter%20-%20Bellman.pdf">Klinga nu med klarinetter - Bellman.pdf</a></li>
+        <li><a href="Let%20it%20snow%20-%20Cahn.pdf">Let it snow - Cahn.pdf</a></li>
+        <li><a href="Mitt%20hjerte%20er%20ditt.pdf">Mitt hjerte er ditt.pdf</a></li>
+        <li><a href="Nessun%20Dorma.pdf">Nessun Dorma.pdf</a></li>
+        <li><a href="Nocturne%20-%20%C3%96hrwall.pdf">Nocturne - Öhrwall.pdf</a></li>
+        <li><a href="Now%20is%20the%20month%20of%20maying%20-%20Thomas%20Morley.pdf">Now is the month of maying - Thomas Morley.pdf</a></li>
+        <li><a href="Rachie-RAH2018.pdf">Rachie-RAH2018.pdf</a></li>
+        <li><a href="Skruva%20fiolen%20-%20Bellman.pdf">Skruva fiolen - Bellman.pdf</a></li>
+        <li><a href="Var%20redo%20-%20Bellman.pdf">Var redo - Bellman.pdf</a></li>
+        <li><a href="White%20Christmas.pdf">White Christmas.pdf</a></li>
+      </ul>
+    </main>
   </body>
 </html>
